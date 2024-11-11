@@ -1,0 +1,39 @@
+Caso de evaluación (5pts)
+Su empresa se dedica a recibir dispositivos para repararlos. En algunos casos, no
+se puede reparar y deben solicitar un dispositivo nuevo. Cuentan con una base de
+datos muy grande donde se registra el estado de cada componente del dispositivo,
+y un dato final indicando si pudo repararse o si fue necesario solicitar un dispositivo
+nuevo.
+
+Le solicitan que haga y entrene un modelo con esos datos, para que al final se
+ingresen los datos de los componentes, y muestre una predicción indicando si el
+dispositivo puede repararse, o si debe solicitarse uno nuevo.
+
+• ¿Qué tipo de modelo aplicaría?
+R=/ Para este caso utilizaría un modelo de regresión logística o un árbol de clasificación,
+pero me inclinaría más por la regresión logística, ya que necesitamos predecir entre dos opciones:
+si el dispositivo se puede reparar (1) o necesita ser reemplazado (0).
+
+• ¿Por qué consideras que ese modelo es adecuado?
+R=/ La regresión logística resulta especialmente adecuada para este problema por varios motivos.
+Este modelo nos proporciona una probabilidad entre 0 y 1, lo que facilita la toma de decisiones.
+Además, es un modelo que el equipo técnico puede interpretar fácilmente, lo cual es crucial para la
+implementación práctica. Su capacidad para manejar múltiples variables de entrada lo hace ideal
+para procesar información de diferentes componentes, y su eficiencia con grandes volúmenes de datos
+se ajusta perfectamente a la extensa base de datos de la empresa.
+
+• ¿De qué manera considera que es diferente a la programación regular, para
+este tipo de proyectos?
+R=/ Para mí, la diferencia notoria está en cómo afrontamos los problemas. En la programación tradicional,
+tenemos que escribir instrucciones muy precisas que el programa sigue al pie de la letra. Por otro lado, en el ML,
+el modelo estudia los datos por su cuenta y aprende a reconocer patrones, lo que le permite enfrentarse a
+situaciones que no hemos programado específicamente.
+
+• ¿Por qué cree que los modelos como los vistos en las clases no logran llegar
+a un 100% de respuestas correctas?
+R=/ Los modelos de ML no alcanzan el 100% de precisión por varias razones. Primero, los datos nunca son perfectos,
+siempre hay ruido o errores. Además, los modelos pueden tener problemas para generalizar y manejar datos nuevos.
+También están las limitaciones de los algoritmos, algunos pueden sobreajustarse a los datos de entrenamiento
+y otros no ser tan precisos. Por último, entrenar modelos muy complejos requiere de muchos recursos computacionales.
+En resumen, es difícil lograr la perfección por la imperfección de los datos, la capacidad limitada de los modelos
+y las limitaciones de los recursos.
